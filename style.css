@@ -1,55 +1,48 @@
-:root{
-    --main:#B5DBF5;
-    --sec:#0187DE;
-    --bg:#1282A2;
-    --text:#fefcfb;
+:root {
+    --main: #B5DBF5;
+    --sec: #0187DE;
+    --bg: #1282A2;
+    --text: #fefcfb;
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
-    overflow-x: hidden;
+    background-color: var(--text);
+    max-width: 70%;
+    margin-left: 15%;
 }
 
-.section-title {
-    font-weight: bold;
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+        margin-left: 0%;
+    }
+
+    .profile {
+        position: absolute;
+        bottom: 145px !important;
+        transform: translateY(50%);
+        width: 150px !important;
+    }
+
 }
 
 a {
     text-decoration: none;
+    color: black;
 }
 
-h3{
+h3 {
     color: var(--sec);
     text-align: center;
 }
 
-h5{
+h5 {
     text-align: center;
 }
 
-.hr{
-    border-top: var(--main) 10px solid;
-    margin-bottom: 15px;
-}
-
-.container-fluid {
-    position: relative;
-}
-
-.profile-pic {
-    position: absolute;
-    right: 0;
-    bottom: 0px;
-    transform: translateY(50%);
-    height: 255px;
-    width: 169px;
-    z-index: 1;
-}
-
-.bg-info {
+.bg-details {
     background-color: var(--main);
-    padding: 20px;
-    text-align: center;
 }
 
 .bg-name {
@@ -58,16 +51,24 @@ h5{
     color: var(--text);
 }
 
-.p-info {
-    padding-top: 2.5rem;
-
-}
-.p-custom{
-    padding-top: 99px;
-}
-
-.icon{
-    height: 25px;    
+.profile {
+    position: absolute;
+    bottom: 70px;
+    transform: translateY(50%);
+    width: 200px;
 }
 
+.icon {
+    height: 25px;
+    margin-right: 0.75rem;
+    ;
+}
 
+.section-title {
+    font-weight: bold;
+}
+
+.hr {
+    border-top: var(--main) 10px solid;
+    margin-bottom: 15px;
+}
